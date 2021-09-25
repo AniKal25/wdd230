@@ -1,0 +1,12 @@
+@media only screen and (min-width: 1024px) {
+    main {
+    grid-template-columns : 1fr 1fr 1fr;
+    }
+
+    div.principles {
+        clear: both;
+        column-count: 3;
+        column-rule: 1px solid #ddd;
+    }
+}
+    

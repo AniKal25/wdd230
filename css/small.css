@@ -30,12 +30,28 @@ body{
   header img{ 
     border-radius: 5px;
     width: 15%;
-    float: right;
     margin-right: 10%;
   }
 
+  main {
+    display: block;
+  }
+
+  main ul {
+    margin-left: 1rem;
+    list-style: none;
+  }
+
+  main ul li::before {
+    content: '💀';
+  }
+
+  main ul li {
+    margin: 0.5rem;
+  }
+
   nav ul {
-    color: brown;
+    color: rgb(209, 99, 99);
   }
 
   nav ul li {
@@ -52,5 +68,7 @@ body{
    padding: 10px;
   }
   a{
-      color: rgb(167, 43, 43);
+    color: rgb(167, 43, 43);
   }
+
+  
