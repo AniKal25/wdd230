@@ -1,0 +1,145 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #F3E9D2;
+}
+
+header {
+    padding: 2.5rem 3%;
+    background-color: #88D498;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+header h1 {
+    margin: 0; 
+    font-size: 1.3rem;
+}
+
+header h2 {
+    margin: 0; 
+    font-weight: normal; 
+    font-size: 1rem;
+}
+
+nav {
+    background-color: #114B5F;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: grid;
+    color: #EEE;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #1A936F;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #C6DABF;
+    color: #826251;
+}
+
+a {
+    color: #826251;
+}
+
+a:hover {
+    color: indigo;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main h1 {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+main section {
+    margin : 50px 50px 0 50px;
+}
+
+main ul {
+    margin-left: 1rem;
+    list-style: none;
+    
+}
+
+ul li {
+    font-family: "Roboto", sans-serif;
+}
+
+main ul li::before {
+    content: '✔';
+}
+
+.colors {
+    width : 100%;
+    min-width : 350px;
+    margin : auto;
+    text-align : center;
+    }
+    .colors th {
+    background-color : #EFEFEF;
+    }
+    .colors td {
+    width : 15%;
+    height : 3em;
+    }
+    .primary {
+    background-color : #114B5F;
+    }
+    .secondary {
+    background-color : #1A936F;
+    }
+    .accent1 {
+    background-color : #88D498;
+    }
+    .accent2 {
+    background-color : #C6DABF;
+    }
+    .accent3 {
+    background-color : #F3E9D2;
+    }
+    .accent4 {
+    background-color : #826251 ;
+    color : var(--primary-color);
+    }
+    article table {
+    border-collapse : collapse;
+    }
+
+footer {
+    background-color: #88D498;
+    padding: 35px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
