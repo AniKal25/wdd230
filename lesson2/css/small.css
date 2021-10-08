@@ -34,11 +34,7 @@ header {
     text-align: center;
 }
 
-hr {
-    box-sizing : content-box;
-    height : 0;
-    overflow : visible;
-}
+
 
 main figure img {
     width: 35%;
