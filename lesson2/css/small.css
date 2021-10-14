@@ -20,6 +20,7 @@ body {
 }
 
 
+
 main {
     background-color: #85B79D;
     padding: 100px;
@@ -35,7 +36,6 @@ header {
 }
 
 
-
 main figure img {
     width: 35%;
 }
@@ -44,6 +44,7 @@ main figure {
     width: 100%;
     margin: 0;
 }
+
 
 footer {
     text-align: center;

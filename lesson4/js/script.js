@@ -3,7 +3,15 @@ function toggleMenu() {
     document.getElementById("bid").classList.toggle("hide");
 }
 
+let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let months = ["January", "February", "March", "April", "May", "June",
+             "July", "August", "September", "October", "November", "December"];
 
+let date = newDate();
+let dayName = dayNames[date.getDay()];
+let monthName = months[date.getMonth()];
+let fullDate = dayName + "," + date.getDay() + " "  + monthName + " " + date.getFullYear();
+document.getElementById("cd").textContent = fullDate;
 
 
 
@@ -17,8 +25,8 @@ function toggleMenu() {
 
 //document.getElementById("lu").textContent = "Last Updated: " + document.lastModified;
 
-let today = new Date();
-let str = today.toGMTString();
+//let today = new Date();
+//let str = today.toGMTString();
 
-document.getElementById("lu").textContent = str;
+//document.getElementById("lu").textContent = str;
 
