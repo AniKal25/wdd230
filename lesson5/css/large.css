@@ -1,0 +1,56 @@
+@media only screen and (min-width: 70rem) {
+
+    header, nav, main, .pancake, footer {
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    section.weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        box-shadow : 0 0 5px #333;
+    }
+
+    section.weather div {
+        text-align: center;
+        border: 1px solid #aaa;
+    }
+    
+    section.weather div h5 {
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .pancake {
+        background : #114B5F;
+        color : white;
+        text-align : center;
+        padding : 0.2rem;
+        }
+
+    .main-contact-email {
+        padding-top : 25px;
+}
+
+.weathersummary {
+    position : absolute;
+    top : 10px;
+    left : 10px;
+    padding : 1rem;
+    background : #1A936F;
+    opacity : 0.92;
+    color : white;
+    border : black solid 1pt;
+    box-shadow : 0 0 5px #333;
+}
+
+}
