@@ -33,7 +33,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: rgb(19, 17, 17);
+    color: white;
 }
 
 nav ul {
@@ -53,7 +53,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #1A936F;
-    color: #333;
+    color: white;
 }
 nav ul li.active a {
     background-color: #C6DABF;
@@ -70,6 +70,11 @@ a {
 
 a:hover {
     color: indigo;
+}
+
+main {
+    padding: 0.2%;
+
 }
 
 main section {
@@ -114,7 +119,6 @@ box-shadow : 0 0 5px #333;
     height : auto;
 }
 
-
     
 .summarytitle {
     border-bottom : 1px solid white;
@@ -142,11 +146,6 @@ p {
     padding: 1rem;
 }
 
-.article {
-    text-align : center;
-    color : rgb(41, 42, 41);
-    font-size: 2.5rem;
-}
 
 .topic {
     text-align : center;
@@ -154,36 +153,53 @@ p {
     font-size: 2.5rem;
 }
 
-.topic-image {
-    float: right;
-    padding : 1.5rem;
-    margin-bottom: 5px;
-    box-shadow : 0 0 1px #333;
+
+section.forecast {
+    display: none;
 }
 
-.contact {
-    text-align : center;
-    color : rgb(41, 42, 41);
-    font-size: 2.5rem;
+
+section.contact-info div.map-response {
+    flex-basis: 100%;
 }
 
-.map-responsive{
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-
-}
-
-.map-responsive iframe{
-    left: 0;
-    top: 0;
-    height: auto;
+div.map-response iframe {
     width: 100%;
-    position: absolute;
-    padding: 30px;
-
+    
 }
+
+.weather {
+    display: none;
+}
+
+section.contact-info {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+div.address {
+    grid-column: 1;
+}
+
+div.phone {
+    grid-column: 2/3;
+}
+
+div.email {
+    grid-column: 3;
+}
+
+div.map-response {
+    grid-column : 1/3;
+    grid-row : 3;
+    }
+
+div.map iframe {
+    width: 100%;
+    }
 
 footer {
     background-color: #88D498;

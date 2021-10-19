@@ -1,4 +1,4 @@
-@media only screen and (min-width: 70rem) {
+@media only screen and (min-width: 1028px) {
 
     header, nav, main, .pancake, footer {
         max-width: 70rem;
@@ -13,33 +13,7 @@
         display: flex;
     }
 
-    section.weather {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        box-shadow : 0 0 5px #333;
-    }
-
-    section.weather div {
-        text-align: center;
-        border: 1px solid #aaa;
-    }
     
-    section.weather div h5 {
-        background-color: #eee;
-        margin: 0;
-        padding: 1rem 0;
-    }
-
-    .pancake {
-        background : #114B5F;
-        color : white;
-        text-align : center;
-        padding : 0.2rem;
-        }
-
-    .main-contact-email {
-        padding-top : 25px;
-}
 
 .weathersummary {
     position : absolute;
@@ -52,5 +26,46 @@
     border : black solid 1pt;
     box-shadow : 0 0 5px #333;
 }
+
+section.forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+section.forecast div {
+    text-align: center;
+    border: 1px solid #aaa;
+    background-color: black;
+    color: white;
+
+}
+
+section.forecast div h5 {
+    background-color: #114B5F;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+section.contact-info {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+section div.contact {
+    grid-column: 1;
+}
+
+div.map-response {
+    grid-column : 1/3;
+    grid-row : 3;
+    float: right;
+    }
+
+div.map iframe {
+    width: 100%;
+    }
 
 }

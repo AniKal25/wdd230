@@ -1,7 +1,8 @@
-@media only screen and (min-width: 35rem) {
+@media screen and (min-width: 560px) {
 
-    nav button {
-        display: flex;
+    nav {
+        max-width: 70rem;
+        margin: auto;
     }
 
     nav ul.hide {
@@ -42,26 +43,6 @@
         float: left;
     }
 
-   
-    section.weather {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        box-shadow : 0 0 5px #333;
-    }
-
-
-
-    section.weather div {
-        text-align: center;
-        border: 1px solid #aaa;
-    }
-    
-    section.weather div h5 {
-        background-color: #eee;
-        margin: 0;
-        padding: 1rem 0;
-    }
-
     .weathersummary {
         position : absolute;
         top : 10px;
@@ -73,6 +54,67 @@
         border : black solid 1pt;
         box-shadow : 0 0 5px #333;
     }
+
+
+    .weather {
+        display: grid;
+        text-align : center;
+        color : rgb(41, 42, 41);
+    }
+
+
+    section.forecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #aaa;
+
+    }
+
+    section.forecast div h5 {
+        background-color: #114B5F;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .topic-image {
+        float: right;
+        padding : 1.5rem;
+        margin-bottom: 5px;
+        box-shadow : 0 0 1px #333;
+    }
+
+
+    section.contact-info {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        flex-wrap: wrap;
+    }
     
+    div.address {
+        grid-column: 1;
+    }
     
-} 
+    div.phone {
+        grid-column: 2;
+    }
+    
+    div.map-response {
+        grid-column : 2;
+    
+        }
+    
+    div.map iframe {
+        height : 100%;
+        }
+
+    section.contact-info div.map-response {
+        flex-basis: 50%;
+    }
+   
+}   
