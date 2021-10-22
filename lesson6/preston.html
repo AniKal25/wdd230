@@ -44,19 +44,27 @@
                 PRESTON TOWN
             </h1>
             <div class="hero">
-                <img class="prestonhero" src="images/the-view.jpg" alt="The view">
+                <picture class="prestonhero">
+                    <source srcset="images/hero320.jpg" media="(max-width: 320px)">
+                    <source srcset="images/hero800.jpg" media="(max-width: 800px)">
+                    <source srcset="images/hero1115.jpg" media="(min-width: 1115px)">
+                    <img  src="images/hero1115.jpg" alt="Warm spring day.">
+                </picture>
+
 
                 <section class="weathersummary">
                     <h3 class="summarytitle">Weather Summary</h3>
                     <div class="summarygrid">
-                        <span class="sumleft">High:</span>
+                        <span class="sumleft">Conditions:</span>
                         <span class="sumright">Cloudy</span>
-                        <span class="sumleft">Low:</span>
-                        <span class="sumright">29°C</span>
-                        <span class="sumleft">Wind:</span>
-                        <span class="sumright">14km/h</span>
+                        <span class="sumleft">Temperature:</span>
+                        <div><span class="temperature">40</span>&#176;F</div>
+                        <span class="sumleft">Wind Chill:</span>
+                        <div><span class="windchill"></span>&#176;F</div>
                         <span class="sumleft">Humidity:</span>
-                        <span class="sumright">84%</span>
+                        <span class="sumright">63%</span>
+                        <span class="sumleft">Wind Speed:</span>
+                        <div><span class="windspeed">9</span>mph</div>
                     </div>
             </section>
             </div>
@@ -177,8 +185,15 @@
         </footer>
         <script src ="js/script.js"></script>
         <script src ="js/date.js"></script>
-
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+             WebFont.load({
+             google: {
+             families: ['Gabriela', 'Serif']
+            }
+         });
+        </script>
+        <script src ="js/windchill.js"></script>
 
     
     
