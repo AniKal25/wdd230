@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1028px) {
 
-    header, nav, main, .pancake, footer {
+    header, nav, main, .hero, .pancake, footer {
         max-width: 70rem;
         margin: auto;
     }

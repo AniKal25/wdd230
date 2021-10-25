@@ -113,6 +113,15 @@ margin : 25px auto;
 box-shadow : 0 0 5px #333;
 }
 
+.hero-div img {
+    max-width: 100%;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
 .prestonhero {
     position : relative;
     width : 100%;
