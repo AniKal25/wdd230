@@ -210,6 +210,59 @@ div.map iframe {
     width: 100%;
     }
 
+.gallery {
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+figure {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+  
+figure img {
+    box-sizing: border-box;
+    width: 0px;
+    min-width: 100%;
+    border: 2px solid #1A936F;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+  
+figcaption {
+    font-size: 1rem;
+    padding: 5px;
+    background-color: white;
+    
+}
+
+figure:hover {
+    box-shadow: 2px 2px 6px 0px  #1A936F;
+}
+
+img[data-src] {
+    filter: blur(0.5em);
+
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 6px 0px #333;
+}
+
+
 footer {
     background-color: #88D498;
     padding: 45px;

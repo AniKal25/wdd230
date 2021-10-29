@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Clime Weather Project</title>
+    <meta name="description" content= "Global Clime Weather Project: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Josefin+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pancake">
+        <p>Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion!</p>
+    </div>
+    
+    <header>
+        <img src="images/weather-logo.png" alt="Site-Logo">
+        <h1>Global Clime</h1>
+        <h2>Your trusted weather forecast</h2>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="bid" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="storm-center.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>    
+            </ul>
+        </nav>
+
+        <main class="gallery-view">
+            <h1 class="gallery">
+                Grid Layout
+            </h1>
+
+            <div class=”gallery”>
+                <figure class=”gallery__item gallery__item--1">
+                  <img src="images/tech-1.jpg" class="gallery__img" alt="Image 1">
+                  <figcaption>Tech is the new oil</figcaption>
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                  <img src="images/tech-2.jpg" class="gallery__img" alt="Image 2">
+                  <figcaption>Tech is the new oil</figcaption>
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                  <img src="images/tech-3.jpg" class="gallery__img" alt="Image 3">
+                  <figcaption>Tech is the new oil</figcaption>
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                  <img src="images/tech-4.jpg" class="gallery__img" alt="Image 4">
+                  <figcaption>Tech is the new oil</figcaption>
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                  <img src="images/tech-5.jpg" class="gallery__img" alt="Image 5">
+                  <figcaption>Tech is the new oil</figcaption>
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                  <img src="images/tech-6.jpg" class="gallery__img" alt="Image 6">
+                  <figcaption>Tech is the new oil</figcaption>
+                </figure>
+              </div>
+
+              <footer>
+                &copy; <span id="theYear"></span> | Anita Barbra Kalu | Nigeria |  <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+                <span id="currentdate"></span>
+              
+            </footer>
+            <script src ="js/script.js"></script>
+            <script src ="js/date.js"></script>
+            <script src ="js/load-images.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                 WebFont.load({
+                 google: {
+                 families: ['Gabriela', 'Serif']
+                }
+             });
+            </script>
+
+</main>
+</body>
+</html>
