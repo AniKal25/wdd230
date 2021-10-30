@@ -1,26 +1,22 @@
-const visit = document.getElementById('visit');
+const millisecondsToDays = 86400000;
 
-let previous = new Date();
-let today = new Date()
-let todayF = new Date(`${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`);
-let localPrevious = localStorage.getItem('previous');
-console.log(`Local Previous is: ${localPrevious}.`)
+let lastVisit = localStorage.getItem("lastvisit");
 
+console.log(lastVisit);
 
-if(localPrevious === '' || localPrevious === null) {
-  console.log('previous is empty.')
-  previous = todayF;
-  
-}else {
-  previous = new Date(localPrevious);
-  console.log(typeof(previous), typeof(todayF))
+console.log(Date.now())
+
+let todaysVisit = Math.floor(Date.now() / millisecondsToDays);
+
+let daysFromVisit = todaysVisit - lastVisit;
+
+localStorage.setItem("lastvisit", todaysVisit);
+
+console.log(todaysVisit);
+
+if (lastVisit != null) {
+
+    document.getElementById("visit").textContent = daysFromVisit;
+} else {
+    document.getElementById("visit").textContent = 0;
 }
-
-let diffTime = todayF.getTime() - previous.getTime();
-let difftodayF = diffTime / (1000 * 3600 * 24);
-console.log(`todayF since last visit: ${difftodayF}`)
-
-localStorage.setItem('previousVisit', todayF);
-console.log(`Local Previous set to: ${todayF}`);
-
-visit.innerText = difftodayF
