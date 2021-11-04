@@ -51,7 +51,7 @@ body{
   }
 
   nav ul {
-    color: rgb(209, 99, 99);
+    color: black;
   }
 
   nav ul li {
@@ -67,6 +67,7 @@ body{
    margin-top: 100px ;
    padding: 10px;
   }
+
   a{
     color: rgb(167, 43, 43);
   }
