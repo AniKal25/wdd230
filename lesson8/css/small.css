@@ -225,9 +225,9 @@ footer {
 }
 
 fieldset {
-    margin: auto;
+    margin: 2rem 0;
     max-width: 50%;
-    border-radius: 15px;
+    border-radius: 10px;
     border-style: solid;
     border-width: 2px;
     border-color: #114B5F;
@@ -258,18 +258,57 @@ input, select, textarea {
       margin: 10px;
   }
 
-legend {
-      font-size: 2em;
+  form legend {
+    color: #05386B;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
   }
 
-form input.submitbtn {
+  form label.top, form label.info, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #05386B;
+    font-size: 1rem;
+  }
+
+  form label.top input, form label.info input, form label.storm select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #000;
+    border-radius: 4px;
+    padding: .5rem;
+    color: #05386B;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #ffffff;
+  }
+
+  form label.radios {
+    display: block;
+    padding-top: 1em;
+  }
+  
+  form label.storm {
+    display: block;
+    padding: .75rem 0;
+    color: #05386B;
+  }
+  
+  form input.submit_button {
+    border: none;
     background-color: #1A936F;
     color: white;
-    text-align: left;
-}
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 2rem 5%;
+    width: 56%;
+    max-width: 15rem;
+  }
 
-form input.submitbtn:hover {
+  form input.submit_button:hover {
     color: black;
-    box-shadow: 2px 2px 6px 0px  #1A936F;
+    box-shadow: 2px 2px 6px 0px  #114B5F;
 }
   
