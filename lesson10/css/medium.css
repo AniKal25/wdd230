@@ -24,6 +24,11 @@
         margin-left: 2%;
     }
     
+    nav button {
+        display: none;
+    }
+
+
     nav ul li a{
         padding: .8rem 1rem;
         border: none;
