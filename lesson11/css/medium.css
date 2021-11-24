@@ -1,0 +1,158 @@
+@media screen and (min-width: 560px) {
+
+    nav {
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+
+    header img {
+        width: auto;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        margin-left: 2%;
+    }
+    
+    nav button {
+        display: none;
+    }
+
+
+    nav ul li a{
+        padding: .8rem 1rem;
+        border: none;
+    }
+
+    nav ul {
+        grid-template-columns : repeat(5,1fr);
+        display : flex;
+        margin : 0;
+        padding : 0;
+        }
+
+    nav ul li {
+        flex : 1 1 100%;
+        list-style-type : none;
+        font-size : 1.5rem;
+        float: left;
+    }
+
+    .weathersummary {
+        position : absolute;
+        top : 10px;
+        left : 10px;
+        padding : 1rem;
+        background : #1A936F;
+        opacity : 0.92;
+        color : white;
+        border : black solid 1pt;
+        box-shadow : 0 0 5px #333;
+    }
+
+
+    .weather {
+        display: grid;
+        text-align : center;
+        color : rgb(41, 42, 41);
+    }
+
+    img {
+        display: block;
+    }
+
+    section#fiveday {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+    section#fiveday div {
+        text-align: center;
+        border: 1px solid #aaa;
+        background-color: #88D498;
+        color: white;
+
+
+    }
+
+    section#fiveday div h5 {
+        background-color: #114B5F;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .topic-image {
+        float: right;
+        padding : 1.5rem;
+        margin-bottom: 5px;
+        box-shadow : 0 0 1px #333;
+    }
+
+
+    section.contact-info {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    div.address {
+        grid-column: 1;
+    }
+    
+    div.phone {
+        grid-column: 2;
+    }
+    
+    div.map-response {
+        grid-column : 2;
+    
+        }
+    
+    div.map iframe {
+        height : 100%;
+        }
+
+    section.contact-info div.map-response {
+        flex-basis: 50%;
+    }
+   
+
+    .gallery {
+        text-align: center;
+        margin: 10px 20px;
+    }
+    
+    .gallery-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3%;
+        justify-content: center;
+        
+    }
+
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    
+      .cards section:nth-child(odd) img {
+        grid-column: 1;
+      }
+    
+      .cards section:nth-child(odd) #details {
+        grid-column: 2;
+        grid-row: 1;
+      }
+}   
