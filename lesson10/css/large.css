@@ -52,7 +52,7 @@ section#fiveday div h5 {
 }
 
 section.contact-info {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
     flex-wrap: wrap;

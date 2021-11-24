@@ -101,10 +101,8 @@
 
 
     section.contact-info {
-        display: flex;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
     div.address {
