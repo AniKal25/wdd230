@@ -168,9 +168,9 @@ section#fiveday {
 }
 
 
-section.contact-info div.map-response {
+/*section.contact-info div.map-response {
     flex-basis: 100%;
-}
+}*/
 
 div.map-response iframe {
     width: 100%;
@@ -181,25 +181,20 @@ div.map-response iframe {
     display: none;
 }*/
 
-section.contact-info {
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    gap: 10px;
-    flex-wrap: wrap;
+div.contact-info {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
 }
 
 div.address {
     grid-column: 1;
 }
 
-div.phone {
-    grid-column: 2/3;
+div.contact {
+    grid-column: 2;
 }
 
-div.email {
-    grid-column: 3;
-}
 
 div.map-response {
     grid-column : 1/3;
