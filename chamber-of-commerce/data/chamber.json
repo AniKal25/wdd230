@@ -1,0 +1,40 @@
+{
+    "businesses": [
+        {
+            "name": "House of Zara",
+            "photo": "zara.jpg",
+            "motto": "Beauty Lies Within Us.",
+            "yearFounded": 2007,
+            "events": [
+                "February 4: Cancer Awareness Day",
+                "June 8: Celebrating Women",
+                "November 25-30: Black Friday Promo"
+            ]
+            
+        },
+        {
+            "name": "Dudu Osun",
+            "photo": "dudu-osun.jpg",
+            "motto": "Beauty is All About You.",
+            "yearFounded": 1995,
+            "events": [
+                "March 18: Skin Connect Day",
+                "June 8: Beauty Show",
+                "November 25: Eliminating Violence Against Women"
+            ]
+            
+        },
+        {
+            "name": "Nike Art Gallery",
+            "photo": "nike-art.jpg",
+            "motto": "Art Is Beauty.",
+            "yearFounded": 1927,
+            "events": [
+                "March 4: Art Fair And Show",
+                "June 29: Art Exhibition",
+                "December 9: Portrait Drawing"
+            ]
+            
+        }
+    ]
+}
