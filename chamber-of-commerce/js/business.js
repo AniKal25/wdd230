@@ -41,7 +41,7 @@ const data = {
 
 
 const data = require("C:/Users/Anita/Downloads/wdd230/chamber-of-commerce/data/chamber.json")
-
+//"C:/Users/Anita/Downloads/wdd230/chamber-of-commerce/data/chamber.json"
 fetch(data)
     .then(function(response) {
         return response.json();
