@@ -44,4 +44,13 @@
         margin: 0;
         padding: 1rem 0;
     }
+
+    .card {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    
+    .card section {
+        display: block;
+        width: 325px;
+      }
 }

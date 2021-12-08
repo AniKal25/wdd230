@@ -1,6 +1,6 @@
-const data = require("C:/Users/Anita/Downloads/wdd230/chamber-of-commerce/data/chamber.json")
-
-fetch(data)
+const requestURL= "https://anikal25.github.io/wdd230/chamber-of-commerce/data/chamber.json"
+//"C:/Users/Anita/Downloads/wdd230/chamber-of-commerce/data/chamber.json"
+fetch(requestURL)
     .then(function(response) {
         return response.json();
     })

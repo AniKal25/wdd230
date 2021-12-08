@@ -72,6 +72,22 @@ a:hover {
     color: indigo;
 }
 
+.hero-div img {
+    max-width: 100%;
+    display: block;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section#threeday{
+    display: none;
+}
+
+
 main {
     padding: 0.2%;
 
@@ -149,7 +165,7 @@ form label.top input, form label.top select, form label.top textarea {
     box-shadow: 2px 2px 6px 0px  #114B5F;
 }
 
-/*
+
 .card {
     text-align: center;
     display: grid;
@@ -171,7 +187,7 @@ form label.top input, form label.top select, form label.top textarea {
     padding: 5px;
     filter: blur(0em);
     transition: filter 1s;
-  }*/
+  }
 
 
   .hero-image-thank-you {

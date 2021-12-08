@@ -1,48 +1,47 @@
 const data = {
-    "businesses": [
+    businesses: [
         {
-            "name": "House of Zara",
-            "photo": "zara.jpg",
-            "motto": "Beauty Lies Within Us.",
-            "yearFounded": 2007,
-            "events": [
+            name: "House of Zara",
+            photo: "zara.jpg",
+            motto: "Beauty Lies Within Us.",
+            yearFounded: 2007,
+            events: [
                 "February 4: Cancer Awareness Day",
                 "June 8: Celebrating Women",
                 "November 25-30: Black Friday Promo"
-            ]
+            ],
             
         },
         {
-            "name": "Dudu Osun",
-            "photo": "dudu-osun.jpg",
-            "motto": "Beauty is All About You.",
-            "yearFounded": 1995,
-            "events": [
+            name: "Dudu Osun",
+            photo: "dudu-osun.jpg",
+            motto: "Beauty is All About You.",
+            yearFounded: 1995,
+            events: [
                 "March 18: Skin Connect Day",
                 "June 8: Beauty Show",
                 "November 25: Eliminating Violence Against Women"
-            ]
+            ],
             
         },
         {
-            "name": "Nike Art Gallery",
-            "photo": "nike-art.jpg",
-            "motto": "Art Is Beauty.",
-            "yearFounded": 1927,
-            "events": [
+            name: "Nike Art Gallery",
+            photo: "nike-art.jpg",
+            motto: "Art Is Beauty.",
+            yearFounded: 1927,
+            events: [
                 "March 4: Art Fair And Show",
                 "June 29: Art Exhibition",
                 "December 9: Portrait Drawing"
-            ]
+            ],
             
-        }
-    ]
-};
+        },
+    ],
+    };
 
-
-const data = require("C:/Users/Anita/Downloads/wdd230/chamber-of-commerce/data/chamber.json")
+const requestURL= "https://anikal25.github.io/wdd230/chamber-of-commerce/data/chamber.json"
 //"C:/Users/Anita/Downloads/wdd230/chamber-of-commerce/data/chamber.json"
-fetch(data)
+fetch(requestURL)
     .then(function(response) {
         return response.json();
     })
