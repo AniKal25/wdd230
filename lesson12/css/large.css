@@ -1,0 +1,56 @@
+@media only screen and (min-width: 1028px) {
+
+    header, nav, main, .hero, footer {
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    .weathersummary {
+        position : absolute;
+        top : 150px;
+        left : 105px;
+        padding : 1rem;
+        background : #1A936F;
+        opacity : 0.92;
+        color : white;
+        border : black solid 1pt;
+        box-shadow : 0 0 5px #333;
+    }
+
+    section#threeday {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    
+    }
+    
+    section#threeday div {
+        text-align: center;
+        border: 1px solid #aaa;
+        background-color: #C5BAAF;
+        color: black;
+    
+    }
+    
+    section#threeday div h5 {
+        background-color: #424B54;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .card {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    
+    .card section {
+        display: block;
+        width: 325px;
+      }
+}
