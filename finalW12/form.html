@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anita Barbra Kalu">
+    <meta name="description" content="Scoots Home Page">
+    <link rel="icon" href="favicon(3).ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">    
+    <title>Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/lccilogo.jpg" alt="Lagos Chamber of Commerce Logo">
+      <section class="heading">
+        <h1>Lagos Chamber of Commerce</h1>
+        <div class="motto">"The Centre of Excellence"</div>
+      </section>
+    </header><body style="background-color: rgba(0, 0, 0, 0.9); font-family: 'Actor';">
+    <div class="ct" style="padding-top: 3%;">
+      <center>
+        <h1 style="color: white">Responsive Contact Form</h1>
+      </center>
+      <div class="tab">
+        <div id="left" class="tabcontent">
+          <h1>Contact Us</h1>
+          <h3>Mr.Left</h3>
+          <p>Malaysia, Kuala Lumpur</p>
+          <p>Telephone: 099-999 9999</p>
+        </div>
+  
+        <div id="right" class="tabcontent">
+          <h1>Contact Us</h1>
+          <h3>Mr.Right</h3>
+          <p>Malaysia, Pahang</p>
+          <p>Telephone: 099-999 9999</p>
+        </div>
+  
+        <button class="tablink" onclick="opent('left', this, '#ff6666')" id="defaultOpen">Mr.Left</button>
+        <button class="tablink" onclick="opent('right', this, '#2eb8b8')">Mr.Right</button>
+      </div>
+  
+      <div class="split">
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col-25">
+                <label>Name:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" name="Name" placeholder="Full Name">
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-25">
+                <label>Email:</label>
+              </div>
+              <div class="col-75">
+                <input type="email" name="Email" placeholder="example@emali.com">
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-25">
+                <label>Phone Number:</label>
+              </div>
+              <div class="col-75">
+                <input type="tel" name="Phone Number" placeholder="+60 xx-xxxxxxx">
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-25">
+                <label>Message:</label>
+              </div>
+              <div class="col-75">
+                <textarea name="Message" placeholder="Type Message Here..." style="height:100px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input onclick="myFunction()" type="button" value="Send">
+            </div>
+          </form>
+        </div>
+  
+        <iframe src="https://api.mapbox.com/styles/v1/xiong15/ck7t7j1m23qub1jo3kyhms631.html?fresh=true&access_token=pk.eyJ1IjoieGlvbmcxNSIsImEiOiJjamkycDJrNGUwZTFwM3FsZzhpM2oxeHc0In0.Nu80_KJZ8zmreVRjZTHJ2w" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div id="snackbar">Sending...</div>
+    </div>
+
+    <footer>
+
+        &copy; <span id="theYear"></span> | Anita Barbra Kalu | Nigeria |  <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+        <span id="currentdate"></span> |
+        <span id="lu"></span>
+      </footer>
+      <script src="js/form.js"></script>
+  </body>

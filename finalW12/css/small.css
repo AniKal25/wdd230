@@ -218,14 +218,14 @@ form label.top input, form label.top select, form label.top textarea {
     background-color: #C5BAAF;
   }
   
- /* .card section img {
+  .card section img {
     border-radius: 8px;
     width: 100%;
     height: auto;
     padding: 5px;
     filter: blur(0em);
     transition: filter 1s;
-  }*/
+  }
 
 
   .hero-image-thank-you {
@@ -250,61 +250,80 @@ form label.top input, form label.top select, form label.top textarea {
       text-align: center;
   }
 
-  form { max-width:420px; margin:50px auto; }
+  form{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+    grid-gap:10px;
+    padding: 20px
+  }
+  .form-field{
+    display:flex;
+    flex-direction:column;
+  }
+  
+  input[type="text"],input[type="email"]{
+    height: 2.4em;
+    font-size:1em;
+    padding-left: 5px;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+  }
+  input[type="text"]:focus,input[type="email"]:focus{
+    border: 2px solid rgba(98, 147, 173,0.5);
+  }
+  label{
+    font-size:1.2em;
+    margin-bottom: 5px;
+  }
+  textarea{
+    resize:none;
+    font-size:1em;
+    padding: 6px 5px;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+  }
+  textarea:focus{
+    border: 2px solid rgba(98, 147, 173,0.5);
+  }
+  .btn{
+    display:flex;
+    align-items:flex-end;
+  }
+  input[type="submit"]{
+    padding:6px 15px;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    margin-top:10px;
+    background-color: #000;
+    color:white;
+  }
 
-.feedback-input {
-  color: Black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #CC6666;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
-
-.feedback-input:focus { border:2px solid #424B54; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:#424B54;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color: black;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-[type="submit"]:hover { background:#E1CE7A; }
-
-
-
-main section .contact {
+  /*main section .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   
   main section .contact div.map {
     display: none;
+  }*/
+
+  .reach {
+    text-align: center;
+  }
+
+  .board {
+    margin-top: 100px;
+    font-size: 1.5rem;
+    text-align: center;
   }
   
+  .members {
+    list-style-type: none;
+}
 
 footer {
     background-color: #C5BAAF;
